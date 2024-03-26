@@ -134,6 +134,7 @@ h2{
 }
 .item5{
     color: black;
+    font-weight: 500;
     grid-area: app5;
     background-image: url(/images/vector-clouds-background_634779-112.avif);
     background-size: cover;
@@ -284,6 +285,7 @@ header img:hover{
 }
 .dot5{
     color: rgb(12, 249, 12);
+    text-shadow: 1px 1px 10px black;
 
 }
 .dot6{
