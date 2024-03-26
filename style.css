@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Kode mono;
+    background: linear-gradient(#103089, #7b3fa6);
+    /* background: linear-gradient(#4a4a4b, #7b3fa6); */
+    color: white;
+}
+
+/* HEADER */
+
+header{
+    z-index: 10;
+    height: 70px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    /* box-shadow: 1px 1px 15px rgb(89, 78, 96);
+    position: fixed;
+    width: 100%;
+    top: 0;  Esto es por si quiero dejar el header fixed position */
+}
+
+header div{
+    height: 33px;
+}
+header div img{
+    margin: 0px 0px 0px 20px;
+    line-height: 70px;
+    width: 33px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 15px rgb(103, 6, 159);
+}
+
+#burger{
+    margin: 0px 20px 0px 0px;
+    border-radius: 50px;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+/* MAIN */
+
+h1{
+    margin-top: 60px;
+    /* margin-top: 60px; Esto es por si quiero dejar el header fixed position */
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    /* color: black;
+    text-shadow: 1px 1px 5px grey; */
+}
+
+h2{
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    /* color: black;
+    text-shadow: 1px 1px 2px grey; */
+
+
+}
+
+#portfolio{
+    color: #987dac;
+}
+
+/* GRILLA */
+
+
+.projectList{
+    width: 100%;
+    height: 100%;
+
+}
+.apps{
+    margin: 30px 15px 0px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "app1"
+    "app2"
+    "app3"
+    "app4"
+    "app5"
+    "app6"
+    "app7"
+    "app8"
+    "app9";
+}
+
+/* GRilla es para editar todos los items a la vez */
+.grilla{
+    margin: 50px 0px 0px 0px;
+    border-radius: 12px;
+    padding: 19px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgba(106, 86, 155, 0.521);
+    /* background-color: black; */
+    list-style-type: none;
+    position: relative;
+}
+
+.grilla h3{
+    margin: 0px 0px 10px 0px;
+}
+
+/* estos items son para editar cada uno a la vez */
+.item1{
+    grid-area: app1;
+}
+.item2{
+    grid-area: app2;
+
+}
+.item3{
+    grid-area: app3;
+
+}
+.item4{
+    grid-area: app4;
+}
+.item5{
+    grid-area: app5;
+
+
+}
+.item6{
+    grid-area: app6;
+
+}
+.item7{
+    grid-area: app7;
+
+}
+.item8{
+    grid-area: app8;
+
+}
+.item9{
+    grid-area: app9;
+
+}
+
+.appName{
+    font-size: 25px;
+}
+.appDesc{
+    font-size: 12px;
+}
+
+.grilla .external{
+    color: white;
+    text-shadow:1px 1px 10px white;
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+    cursor: pointer;
+}
+
+.date{
+    width: 60px;
+    margin: 15px 0px 0px 0px;
+    font-size: 10px;
+    padding: 4px;
+    background-color: rgb(244, 244, 244);
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 12px;
+    left:19px;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 5px 0px 0px 0px;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+}
+
+.technologies .tech{
+    margin: 5px 10px 0px 10px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(186, 186, 186);
+    font-size: 12px;
+}
+
+.active{
+    text-shadow: 1px 1px 5px rgb(163, 242, 132);
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+
+.footer{
+    margin: 29px 0px 0px 0px;
+    background-color: black;
+    text-align: center;
+}
+
+/* HOVER */
+
+#burger:hover{
+    text-shadow: 1px 1px 15px rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+
+header img:hover{
+        box-shadow: 1px 1px 15px rgb(255, 255, 255);
+        transition: 0.3s ease;
+}
+
+.grilla:hover{
+    transform: scale(1.005);
+    transition: 0.5s ease;
+    box-shadow: 1px 1px 20px white;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 597px){
+    .apps{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "app1 app2"
+        "app3 app4"
+        "app5 app6"
+        "app7 app8"
+        "app9 app9";
+    }
+}
+
+@media screen and (min-width: 960px){
+    .apps{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "app1 app2 app3"
+        "app4 app5 app6"
+        "app7 app8 app9";
+    }
+}
+
+/* DOTS */
+
+.dot1{
+    color: rgb(12, 249, 12);
+}
+
+.dot2{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot3{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot4{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot5{
+    color: rgb(12, 249, 12);
+
+}
+.dot6{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot7{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot8{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
+.dot9{
+    color: orange;
+    text-shadow: 1px 1px 10px orange;
+}
