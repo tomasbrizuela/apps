@@ -120,6 +120,13 @@ h2{
 /* estos items son para editar cada uno a la vez */
 .item1{
     grid-area: app1;
+    background-image: url(images/btc.png);
+    background-position: left;
+    background-size: cover;
+    color: black;
+    p{
+        font-weight: 800;
+    }
 }
 .item2{
     grid-area: app2;
