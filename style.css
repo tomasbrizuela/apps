@@ -239,7 +239,8 @@ h2{
 
 
 .footer{
-    margin: 29px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    margin: 50px 0px 0px 0px;
     background-color: black;
     text-align: center;
 }
@@ -263,7 +264,10 @@ header img:hover{
 }
 
 
-
+footer div a{
+    color: white;
+    text-decoration: underline;
+}
 
 /* MEDIA QUERIES */
 
