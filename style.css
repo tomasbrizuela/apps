@@ -160,7 +160,7 @@ h2{
     color: black;
     font-weight: 500;
     grid-area: app5;
-    background-image: url(images/item5.png);
+    background-image: url("/images/item5.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
