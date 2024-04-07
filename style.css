@@ -183,6 +183,8 @@ h2{
 
 .item0{
     grid-area: app0;
+    background-image: url(/images/covermeoom.jpg);
+    background-size: auto;
 }
 
 .appName{
