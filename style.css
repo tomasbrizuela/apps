@@ -104,7 +104,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "app-1"
+    "app0"
     "app1"
     "app2"
     "app3"
@@ -183,7 +183,7 @@ h2{
 }
 
 .item0{
-    grid-area: app-1;
+    grid-area: app0;
 }
 
 .appName{
@@ -280,11 +280,11 @@ footer div a{
     .apps{
         grid-template-columns: 50% 50%;
         grid-template-areas: 
-        "app1 app2"
-        "app3 app4"
-        "app5 app6"
-        "app7 app8"
-        "app9 app9";
+        "app0 app1"
+        "app2 app3"
+        "app4 app5"
+        "app6 app7"
+        "app8 app9";
     }
 }
 
@@ -292,9 +292,10 @@ footer div a{
     .apps{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "app1 app2 app3"
-        "app4 app5 app6"
-        "app7 app8 app9";
+        "app0 app1 app2"
+        "app3 app4 app6"
+        "app7 app8 app9"
+        "app5 app5 app5";
     }
 }
 
