@@ -93,11 +93,6 @@ h2{
 
 /* GRILLA */
 
-
-.projectList{
-    
-
-}
 .apps{
     margin: 30px 15px 0px 15px;
     display: grid;
@@ -183,7 +178,7 @@ h2{
 
 .item0{
     grid-area: app0;
-    background-image: url(/images/covermeoom.jpg);
+    background-image: url(images/covermeoom.jpg);
     background-size: auto;
 }
 
