@@ -104,6 +104,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
+    "app-1"
     "app1"
     "app2"
     "app3"
@@ -179,6 +180,10 @@ h2{
 .item9{
     grid-area: app9;
 
+}
+
+.item0{
+    grid-area: app-1;
 }
 
 .appName{
